@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/shatakshig21/shatansible.git'
+                git branch: 'master', url: 'https://github.com/shatakshig21/shatans.git'
             }
         }
 
