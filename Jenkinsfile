@@ -20,7 +20,7 @@ pipeline {
         stage('Deploy') {
             steps {
  
-               sh 'ansible-playbook ansible/playbook.yml -i ansible/hosts.ini'
+               sh 'ansible-playbook ansible_backup/playbook.yml -i ansible_backup/hosts.ini'
             }
         }
 
