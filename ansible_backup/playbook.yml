@@ -1,10 +1,10 @@
 ---
-- name: deploy to tomcat
+- name: deploy To tomcat
   hosts: web
   become: yes
   tasks: 
-    - name: copy war file in tomcat
-      src: "/var/snap/jenkins/4874/workspace/shatansible/target/shatansible.war"
-      dest: "/opt/tomcat/webapps/shatansible.war"
-      remote_src: no
-     
+    - name: copy WAR file to tomcat
+      copy:
+        src: "/var/snap/jenkins/4874/workspace/shatansible/target/shatansible.war"
+        dest: "/opt/tomcat/webapps/shatansible.war"
+        remote_src: no
